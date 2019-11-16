@@ -1,0 +1,39 @@
+SSM+Swagger+Thymeleaf+Druid+BootStrap
+数据库:Game
+   表名:lol
+        hero_id          int          编号
+        hero_name        varchar(20)  姓名
+        hero_birthday    datetime     出生日期
+        hero_hp          int          生命值
+        hero_mp          varchar(10)  魔法值
+        hero_lv          int          等级
+        hero_type        int          分类
+                                   (战士、法师、刺客、坦克、辅助、射手)
+        hero_price       int          价格
+
+      1.查询全部
+         name  hp  mp  lv  type  price  birthday
+
+      2.增加
+         name
+         hp
+         mp
+         lv
+         type  (下拉列表)
+         price
+         birthday
+
+      3.修改
+        name           只读
+        hp
+        mp
+        lv             只读
+        type  (下拉列表)  默认选中当前的类型
+        price
+        birthday       只读
+
+      4.删除
+项目名    LeagueOfLegends
+
+
+

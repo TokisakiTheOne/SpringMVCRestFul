@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<!--1.测试get请求-->
+<form action="testGet" method="get">
+    <button type="submit">测试GET</button>
+</form>
+<!--2.测试post请求-->
+<form action="testPost" method="post">
+    <p>编号<input type="text" name="id"></p>
+    <p>姓名<input type="text" name="name"></p>
+    <button type="submit">测试POST</button>
+</form>
+<!--3.测试delete请求-->
+<form action="testDelete" method="post">
+    <!--隐藏域-->
+    <input type="hidden" name="_method" value="DELETE">
+    <button type="submit">测试Delete</button>
+</form>
+<!--4.测试put请求-->
+<form action="testPut" method="post">
+    <!--隐藏域-->
+    <input type="hidden" name="_method" value="PUT">
+    <button type="submit">测试Put</button>
+</form>
+
+
+<a href="/testGet/AS3166/张三">测试springmvcrestful的路径参数</a>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

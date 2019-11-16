@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Title</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"/>
+</head>
+<body>
+<form action="/stu/update" method="post">
+    <input type="hidden" name="_method" value="PUT">
+    <div class="form-group">
+        <label>编号</label>
+        <input class="form-control" placeholder="编号" readonly name="id" th:value="${stu.id}">
+    </div>
+    <div class="form-group">
+        <label>姓名</label>
+        <input  class="form-control"  placeholder="姓名" name="name" th:value="${stu.name}">
+    </div>
+    <button type="submit" class="btn btn-default">修改</button>
+</form>
+</body>
+</html>
